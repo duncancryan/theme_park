@@ -1,9 +1,11 @@
 package behaviours;
 
+import people.Visitor;
+
 public interface ITicketed {
 
 
-    double defaultPrice();
+    public double defaultPrice();
 
-
+    public double priceFor(Visitor visitor);
 }
